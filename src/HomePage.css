@@ -1,0 +1,36 @@
+
+body{
+    background-color: #1e1e1e;
+}
+
+.parent {
+display:flex;
+height: 100vh;
+width: 100vw;
+
+}
+.left{
+    background-color: black;
+    flex:0.6
+
+}
+.main-holder{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    flex:3
+}
+
+.top{
+    flex:0.5;
+    background-color: #1e1e1e;
+}
+
+.main{
+    flex:3;
+     background-color: #1e1e1e;
+}
+
+h1{
+    color: white;
+}
