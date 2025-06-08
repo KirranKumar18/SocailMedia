@@ -1,8 +1,4 @@
 
-body{
-    background-color: #1e1e1e;
-}
-
 .parent {
 display:flex;
 height: 100vh;
@@ -11,7 +7,8 @@ width: 100vw;
 }
 .left{
     background-color: black;
-    flex:0.6
+    flex:0.8;
+    padding: 20px;
 
 }
 .main-holder{
@@ -24,13 +21,26 @@ width: 100vw;
 .top{
     flex:0.5;
     background-color: #1e1e1e;
+     padding-left: 20px;
 }
 
 .main{
     flex:3;
      background-color: #1e1e1e;
+      padding: 20px;
 }
 
 h1{
     color: white;
+}
+
+.Hp-btn{
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    margin-left: 55px;
+    margin-top: 50px;
 }
