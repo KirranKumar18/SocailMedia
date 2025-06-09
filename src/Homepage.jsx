@@ -8,13 +8,13 @@ const MsgSender = async(Sender,Message,msg_Time)=>{
 const { error } = await supabase
                 .from("Chat")
                 .insert([{Sender,Message,msg_Time}]);
-}
-if(error){
-    alert("there was an error "+error)
-}
-else{
-    alert("No error")
-}
+                if(error){
+                    alert("there was an error "+error)
+                }
+                else{
+                    alert("No error")
+                }
+            }
 
 
     return(
