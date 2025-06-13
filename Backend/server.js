@@ -1,18 +1,16 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import { connectDB } from './config/db.js';
+import  router  from './Routes/routes.js';
+
 dotenv.config();
-
 const app =express()
+app.use(express.json())
 
-app.get("/",(req,res)=>{
-    
-})
-
-
+app.use('/api',router)
 
 app.listen(5000,()=>{
     connectDB();
-    console.log("server started at http://localhost:5000   ")
+    console.log("server started at http://localhost:5000  ")
 })
   
